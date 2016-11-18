@@ -1,0 +1,23 @@
+{
+  "author": "Julio C Vila",
+  "license": "ISC",
+  "name": "node-es6-sample-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.gatech.edu/jvila6/node-es6-sample-app.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "nodemon": "^1.11.0"
+  }
+}
